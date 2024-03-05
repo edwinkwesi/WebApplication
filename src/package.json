@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "pm2": "pm2 start process.json --no-daemon",
     "start": "node ./bin/www",
     "test": "jest",
     "migrate": "node ./bin/migrate"
@@ -13,8 +14,9 @@
     "express": "^4.18.3",
     "morgan": "~1.9.1",
     "pg": "^8.11.3",
+    "pm2": "^5.3.1",
     "sequelize": "^6.37.1"
-  }, 
+  },
   "devDependencies": {
     "jest": "^29.7.0"
   }
